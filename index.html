@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">
+            <h1>wallet</h1>
+        </div>
+        <div class="container">
+            <div class="diagram_container">
+                <svg class="chart" width="500" height="500" viewBox="0 0 50 50">
+                    <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                    <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                    <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                    <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>              
+                  </svg>
+                <ul class="legend__list">
+                <li class="legend__item" data-category="product" id="product">
+                    <span class="legend__category">Продукты</span>
+                    <span class="legend__price" data-price="product" id="sp1">0</span>
+                </li>
+                <li class="legend__item" data-category="fastfood" id="fastfood">
+                    <span class="legend__category">ФастФуд</span>
+                    <span class="legend__price" id="sp2">0</span>
+                </li>
+                <li class="legend__item" data-category="sport" id="sport">
+                    <span class="legend__category">Спорт</span>
+                    <span class="legend__price" id="sp3">0</span>
+                </li>
+                <li class="legend__item" data-category="drinks" id="drinks">
+                    <span class="legend__category">Напитки</span>
+                    <span class="legend__price" id="sp4">0</span>
+                </li>
+            </ul>
+            <div class="bill">Счёт: <span class="bill_num">0</span></div>
+        </div>
+            <div class="legend_container">
+                <div class="legend">
+                    <table class="table" id="table">
+                        <thead class="purcashes__header">
+                            <tr class="purcashes__row">
+                                <td class="purcashes__td">Наименование</td>
+                                <td class="purcashes__td">Цена</td>
+                                <td class="purcashes__td">Категория</td>
+                                <td class="purcashes__td"></td>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+            <div class="input_container">
+                <div class="editor__form-row">
+                    <p class="editor__form-input-name">Товар:</p>
+                    <input type="text" class="editor__form-input" name="name" placeholder="Наименование"
+                        autocomplete="off" id="tovarName">
+                </div>
+                <div class="editor__form-row">
+                    <p class="editor__form-input-name">Цена:</p>
+                    <input type="text" class="editor__form-input" name="price" placeholder="0" autocomplete="off" id="tovarPrice">
+                </div>
+                <div class="editor__form-row">
+                    <p class="editor__form-input-name">Категория:</p>
+                    <select name="select-category" id="selectCategory" class="editor__form-input">
+                        <option value="product">Продукты</option>
+                        <option value="fastfood">ФастФуд</option>
+                        <option value="sport">Спорт</option>
+                        <option value="drinks">Напитки</option>
+                    </select>
+                </div>
+                <div class="editor__form-row">
+                    <button class="btn" name="addBtn" id="btn">Добавить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
